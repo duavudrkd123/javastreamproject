@@ -1,6 +1,7 @@
 package stream.intermediate;
 
 import java.util.List;
+import java.util.OptionalDouble;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.IntStream;
@@ -25,7 +26,7 @@ public class ReduceExample {
 				}
 			
 		})
-		.flatMaptoInt(new Function<Employee, IntStream>(){
+		.flatMapToInt(new Function<Employee, IntStream>(){
 
 			@Override
 			public IntStream apply(Employee t) {
